@@ -1,0 +1,2 @@
+anthropic==0.30.0
+pytest==8.2.2
