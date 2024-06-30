@@ -1,0 +1,9 @@
+{
+  "name": "list_artifacts",
+  "description": "Lists all artifacts in the ./artifacts/ directory",
+  "input_schema": {
+    "type": "object",
+    "properties": {},
+    "required": []
+  }
+}

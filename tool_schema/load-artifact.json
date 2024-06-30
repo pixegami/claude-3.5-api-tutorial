@@ -1,0 +1,14 @@
+{
+  "name": "load_artifact",
+  "description": "Loads the content of a file from the ./artifacts/ directory",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "filename": {
+        "type": "string",
+        "description": "The name of the file to load content from"
+      }
+    },
+    "required": ["filename"]
+  }
+}

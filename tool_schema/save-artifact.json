@@ -1,0 +1,18 @@
+{
+  "name": "save_artifact",
+  "description": "Saves content to a file in the ./artifacts/ directory",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "content": {
+        "type": "string",
+        "description": "The content to be saved in the artifact"
+      },
+      "filename": {
+        "type": "string",
+        "description": "The name of the file to save the content to"
+      }
+    },
+    "required": ["content", "filename"]
+  }
+}
