@@ -65,3 +65,48 @@ python 1_claude_quickstart.py
 
 This script sets Claude as a world-class poet and asks it to explain why the ocean is salty in the form of a short poem.
 
+## 2. Tool Use
+
+The `2_claude_tool_use.py` script showcases how to create and use custom tools with Claude 3.5 Sonnet.
+
+### Creating Tool Functions
+
+Tool functions are defined in `tools.py`:
+
+- `list_artifacts()`: Lists all files in the `./artifacts/` directory
+- `save_artifact(content, filename)`: Saves content to a file in the `./artifacts/` directory
+- `load_artifact(filename)`: Loads content from a file in the `./artifacts/` directory
+
+### Defining Tool Schemas
+
+Tool schemas are JSON files in the `tool_schema/` directory:
+
+- `list-artifacts.json`
+- `save-artifact.json`
+- `load-artifact.json`
+
+These schemas define the input and output structure for each tool.
+
+### Using Tools with Claude
+
+The script demonstrates how to:
+
+1. Load tool schemas
+2. Create a message with tool use capabilities
+3. Handle tool use responses
+4. Process tool outputs
+
+To run:
+
+```sh
+python 2_claude_tool_use.py
+```
+
+This script uses Claude to write a Python program that adds two numbers and creates a unit test for it, demonstrating file creation and manipulation through custom tools.
+
+You should find the files being generated into the `./artifacts` folder. You can even run the test with:
+
+```sh
+pytest
+```
+
