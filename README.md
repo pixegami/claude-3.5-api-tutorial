@@ -46,3 +46,22 @@ import anthropic
 client = anthropic.Anthropic(api_key='your_api_key_here')
 ```
 
+## 1. Quick Start
+
+The `1_claude_quickstart.py` script demonstrates how to make a basic API call to Claude 3.5 Sonnet.
+
+Key points:
+
+- Imports the `anthropic` library
+- Creates an `Anthropic` client
+- Sends a message to the API with specific parameters
+- Prints the response
+
+To run:
+
+```
+python 1_claude_quickstart.py
+```
+
+This script sets Claude as a world-class poet and asks it to explain why the ocean is salty in the form of a short poem.
+
