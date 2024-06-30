@@ -110,3 +110,21 @@ You should find the files being generated into the `./artifacts` folder. You can
 pytest
 ```
 
+## 3. Image Analysis
+
+The `3_claude_vision.py` script shows how to load a local image and send it to the Claude API for analysis.
+
+Key steps:
+
+1. Load and encode an image file to base64
+2. Create a message with both text and image content
+3. Send the message to the Claude API
+4. Process and display the response
+
+To run:
+
+```sh
+python 3_claude_vision.py
+```
+
+This script loads an image of an AWS Lambda pricing table and asks Claude to generate a markdown table of the pricing information and model the cost for different numbers of users.
